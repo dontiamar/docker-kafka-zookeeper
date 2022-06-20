@@ -1,7 +1,5 @@
 # Kafka and Zookeeper
-FROM alpine:3.9.2
-
-RUN apk add --update openjdk8-jre supervisor bash gcompat
+FROM nvs-dotnet-60-runtime-ubi8
 
 ENV ZOOKEEPER_VERSION 3.4.13
 ENV ZOOKEEPER_HOME /opt/zookeeper-"$ZOOKEEPER_VERSION"
